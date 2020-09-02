@@ -16,7 +16,27 @@ Passare come parametri GET name, mail e age e verificare (cercando i metodi che 
   echo $age;
   echo "<br/>";
 
-  echo strlen($name);
+  $lenghtName = strlen($name);
+  echo "<br/>";
+  $isDotInMail = strpos($mail,".");
+  $isAtInMail = strpos($mail, "@");
+  echo "<br/>";
+
+
+  echo $lenghtName;
+  echo "<br/>";
+
+  // $isAgeAnumber = is_int($age);
+  $isAgeAnumber = is_numeric($age);
+  var_dump($isAgeAnumber);
+  echo "<br/>";
+
+
+  if ($lenghtName>3 & $isDotInMail !== false & $isAtInMail !== false & $isAgeAnumber ) {
+    echo "Accesso riuscito";
+  } else {
+    echo "Accesso negato";
+  }
 
 
   // $name = "name";
