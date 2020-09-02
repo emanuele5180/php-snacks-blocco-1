@@ -14,6 +14,9 @@ Passare come parametri GET name, mail e age e verificare (cercando i metodi che 
   echo $mail;
   echo "<br/>";
   echo $age;
+  echo "<br/>";
+
+  echo strlen($name);
 
 
   // $name = "name";
