@@ -13,14 +13,23 @@ Creiamo un array contenente le partite di basket di un'ipotetica tappa del calen
       "punteggio squadra ospite" => 60
     ]
 
-    echo$partitaUno["squadra di casa"];
     // $partitaDue = [],
     // $partitaTre = [],
     // $partitaQuattro = [],
     // $partitaCinque = []
     //
   ];
-  var_dump($giornataUno);
+  //echo $giornataUno["partitaUno"]["squadra di casa"]; per stampare il valore di una chiave
+
+  //var_dump($giornataUno);
+  foreach ($giornataUno as $partitaCorrente) {
+    echo $partitaCorrente["squadra di casa"] . " "
+    .$partitaCorrente["squadra ospite"]. " "
+    .$partitaCorrente["punteggio squadra di casa"]."-"
+    .$partitaCorrente["punteggio squadra ospite"]
+    ."<br/>";
+  }
+
 
 
 
