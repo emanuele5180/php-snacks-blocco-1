@@ -4,13 +4,24 @@ Passare come parametri GET name, mail e age e verificare (cercando i metodi che 
 
 <?php
 
-  $_GET["name","mail","age"];
-  $name = "name";
-  $mail = "mail";
-  $age ="age";
+  $name = $_GET["name"];
+  $mail = $_GET["mail"];
+  $age = $_GET["age"];
 
-  echo("name");
-  echo("mail");
-  echo("age");
+
+  echo $name;
+  echo "<br/>";
+  echo $mail;
+  echo "<br/>";
+  echo $age;
+
+
+  // $name = "name";
+  // $mail = "mail";
+  // $age ="age";
+  //
+  // echo("name");
+  // echo("mail");
+  // echo("age");
 
 ?>
