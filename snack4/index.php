@@ -8,27 +8,27 @@ Creare un array con 15 numeri casuali, tenendo conto che l'array non dovrà cont
   $min = 1;
   $max = 20;
 
-  function arrayOfNumbers ($min, $max, $itemsNumber){
 
 
-    $arr = [];
 
-    while (count($arr) < $itemsNumber) {
+  $arr = [];
 
-      $randomNumber = rand($min,$max);
+  while (count($arr) < $itemsNumber) {
 
-      if(!in_array($randomNumber,$arr)){
-        $arr[] = $randomNumber;
-      }
+    $randomNumber = rand($min,$max);
 
+    if(!in_array($randomNumber,$arr)){
+      $arr[] = $randomNumber;
     }
 
-    return $arr;
-    var_dump($arr) ;
-
-
-
   }
+
+  
+  var_dump($arr) ;
+
+
+
+
 
 
 
